@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Source Sans Pro', sans-serif;
+ 
+}
+.largura-maxima{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+ h3, p, figcaption {
+    color: #0000008c;
+    text-align: center;
+}
+
+
+.conteudo-sobre-clinica p, .conteudo-multiespecialidades, .conteudo-contatos {
+    margin: 0 auto;
+}
+
+
+/* Estilo do Topo */ 
+
+.estilo-topo {
+    background-color: #04D9D9;
+}
+hr{
+    display: none;
+}
+
+ .estilo-topo section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+.estilo-topo img{
+    width: 100px;
+}
+
+ .estilo-topo section 
+ a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 1vh;
+     
+ }
+
+ .estilo-topo section 
+ a:hover{
+    text-decoration: none;
+    color: #0601156d;
+    font-weight: bold;
+    padding: 0 1vh;
+
+ }
+ 
+
+/* Estilização Conteúdo */ 
+
+    /* -------- Seção Banner -------- */ 
+
+.fundo-recepcao{
+    background-image: url(../img/recepcao.png);
+    background-size: cover;
+    max-width: 100%;
+    height: 500px;
+}
+.container-slogan{
+   
+    height: 500px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.texto-slogan{
+    padding: 20px;
+    color: #fff;
+    max-width: 1024px;
+}
+
+.container-slogan h2{ 
+    font-weight: normal;
+    font-size: 35px;
+}
+ 
+    /* --------  Seção Sobre a Clínica-------- */ 
+ 
+.container-sobre{
+    display: flex;
+    flex-direction: column;
+}
+ 
+.conteudo-sobre-clinica h3, .foto-medico{
+    padding: 40px;
+}
+ 
+        /* Foto Médico e Lista */ 
+.foto-medico{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+ .container-lista header p {
+    font-size: 19px;
+
+}
+
+.container-lista ul{
+    padding: 10px;
+}
+.container-lista ul li{
+    color: #0000008c;
+    
+}
+
+        /* Cards */ 
+
+.conteudo-multiespecialidades p{
+    margin: 10px 0 0 0px;
+}
+
+.conteudo-multiespecialidades h3, .conteudo-multiespecialidades  {
+    padding-bottom: 40px;
+}
+
+
+.cards-especialidades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 0 0 40px 0;
+ 
+    
+}
+
+.cards-especialidades div{
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.261);
+}
+
+.cards-especialidades img{
+    width: 100%;
+}
+
+figcaption{
+    padding: 10px;
+}
+
+/* Estilização Contatos*/ 
+
+    /* Botão */ 
+
+.botao{
+ 
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #04D9D9;
+    font-weight: bold;
+}
+
+.botao a{
+    text-decoration: none;
+    color: #fff;   
+}
+
+    /* Contato */ 
+
+.conteudo-contatos{
+    padding-top: 40px;
+    margin: 0 auto;
+    line-height: 35px;
+}
+
+.conteudo-contatos h3{
+    padding-bottom: 20px;
+}
+
+
+
+iframe {
+    width: 100%;
+    height: 500px;
+    padding: 40px 0;
+}
+
+ /* Footer */ 
+
+ footer{
+    background-color: #096E76;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40px;
+     
+ }
+
+ footer figure{
+    margin: 0 auto;
+ }
+
+ footer section {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+ }
+
+ footer p{
+    color: #fff;
+ }
+
+ footer a {
+    text-decoration: none;
+    color: #fff;
+ }
+
+ footer a:hover {
+    text-decoration: none;
+    color: #ffffff65;
+ }
+ 
+ /* ========  RESPONSIVIDADE =================*/
+
+ @media only screen and (max-width: 435px){
+
+    
+    /* Topo */ 
+
+    .estilo-topo img{
+        width: 120px;
+    }
+
+    .estilo-topo section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    hr{
+        display: block;
+        border: 1px solid rgba(0, 0, 0, 0.137);
+        width: 95%;
+    }
+
+    .estilo-topo nav{
+        padding: 5px;
+    }
+
+    /* Banner */ 
+
+    .fundo-recepcao{
+        height: 200px;
+    }
+
+    .container-slogan{
+        display: flex;
+        align-items: center;
+        height: 200px;
+    }
+
+    .texto-slogan h2{
+        font-size:  15px;        
+     }
+    
+     /* Conteudo */ 
+
+     .foto-medico figure{
+        display: none ;
+     }
+
+     /* Multiespecialidade */
+
+     .cards-especialidades{
+        display: flex;
+        flex-direction: column;
+     }
+
+     .cards-especialidades div{
+        margin: 20px;
+     }
+     
+ }
+
+ @media only screen and (min-width: 435px) and (max-width: 768px){
+
+/* Banner */ 
+
+    .fundo-recepcao{
+        height: 300px;
+    }
+
+    .container-slogan{
+        display: flex;
+        align-items: center;
+        height: 300px;
+    }
+
+/* Sobre */ 
+
+    .foto-medico figure{
+        display: none ;
+     }
+
+/* Cards */ 
+
+/* Multiespecialidade */
+
+.cards-especialidades{
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+ }
+
+ .cards-especialidades div{
+    max-width: 350px;
+ }
+
+ }
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px){
+    .fundo-recepcao{
+        height: 400px;
+    }
+ }
+
+ @media only screen and (min-width: 1024px) {
+    .fundo-recepcao{
+        height: 500px;
+    }
+ }
+
+ 

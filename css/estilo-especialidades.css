@@ -1,0 +1,114 @@
+/* Estilo Navegação */ 
+
+.navegacao-especialidades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px 200px;
+    
+}
+
+.navegacao-especialidades a{
+    text-decoration: none;
+    color: #0000008c;
+    border-bottom: 2px solid #04D9D9; 
+}
+
+
+.navegacao-especialidades a:hover{
+    text-decoration: none;
+    color: #4f8a8ac9;
+    border-bottom: 2px solid #04D9D9; 
+}
+
+/* Estilo Especialidades */ 
+
+main h2{
+
+    color: #0000008c;
+    text-align: center;
+}
+
+main h2, .container-especialidade h3{
+    padding-bottom: 40px;
+}
+
+.container-especialidade section{
+    display: flex;
+    margin: 40px auto;
+}
+
+.container-especialidade img{
+    width: 30%;
+}
+
+.tabela-especialidades{
+    text-align: center;
+}
+
+ /* Estilização da Tabela */ 
+ 
+table{
+    border-collapse: collapse;
+    width: 80%;
+      
+}
+ 
+table thead {
+    background-color: #04D9D9;
+    color: white;
+    height: 50px;
+    width: 300px;
+}
+
+table tbody tr:nth-of-type(odd){
+    background-color: #0000001f;
+}
+
+
+table th,
+table td {
+    height: 50px;
+    padding: 0 10px;
+}
+
+footer img {
+    width: 100px;
+}
+
+
+.tabela-especialidades {
+    display: flex;
+    justify-content: center;
+}
+
+
+.navegacao-especialidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px 10px;
+}
+
+
+/* ############# Media Query ############## */ 
+
+@media only screen and (max-width: 425px) {
+    
+    .tabela-especialidades img {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    
+
+    .tabela-especialidades img {
+        display: none;
+    }
+
+}
+ 
+
+ 
